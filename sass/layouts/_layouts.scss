@@ -1,3 +1,103 @@
+html {
+  font-size: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
 h1 {
-    color: red;
+  font-size: 1.7142857142857142em;
+
+  @media (min-width: $tablet) {
+    font-size: 2.1em;
+  }
+}
+
+h2 {
+  font-size: 2.2857142857142856em;
+
+  @media (min-width: $tablet) {
+    font-size: 2.4em;
+  }
+}
+
+h3 {
+  font-size: 1.4285714285714286em;
+
+  @media (min-width: $tablet) {
+    font-size: 1.6em;
+  }
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Bold";
+}
+
+a {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+  font-family: "ExtraLight";
+}
+
+.s-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  @media (min-width: $tablet) {
+    padding: 40px 48px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 120px;
+  }
+}
+
+/* Hide horizontal scrollbar for WebKit-based browsers */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+/* Optional: Customize scrollbar track */
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Optional: Customize scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* Optional: Hover effect for scrollbar thumb */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
 }

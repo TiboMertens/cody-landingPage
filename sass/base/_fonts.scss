@@ -1,0 +1,17 @@
+/*
+RULES:
+- font-family: 'name-name' with spaces the font face won't work
+- src: url('') format('') -> firefox won't pick up this font without
+- assets: filename without spaces -
+- variable font, format('truetype supports variations')
+*/
+
+@font-face {
+    font-family: 'ExtraLight';
+    src: url("../public/assets/Sarabun-ExtraLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url("../public/assets/Sarabun-Bold.ttf") format('truetype');
+}
