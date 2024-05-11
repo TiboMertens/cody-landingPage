@@ -887,7 +887,7 @@ span {
   text-align: right;
   margin-right: 24px;
   position: relative;
-  bottom: 54px;
+  bottom: 32px;
 }
 @media (min-width: 768px) {
   .s-hero .arrow-down {
@@ -899,7 +899,11 @@ span {
     margin-right: 120px;
   }
 }
-.s-hero .arrow-down img {
+.s-hero .arrow-down a {
+  width: 50px;
+  height: 50px;
+}
+.s-hero .arrow-down a img {
   width: 50px;
   height: 50px;
 }
@@ -926,10 +930,15 @@ span {
 }
 .s-how-it-works .s-inner .introduction .switch {
   background-color: #E9F0FD;
-  height: 60px;
+  height: 48px;
   display: inline-flex;
   align-items: center;
   border-radius: 5px;
+}
+@media (min-width: 474px) {
+  .s-how-it-works .s-inner .introduction .switch {
+    height: 60px;
+  }
 }
 .s-how-it-works .s-inner .introduction .switch .switch-item {
   padding: 0 24px;
