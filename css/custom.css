@@ -787,7 +787,7 @@ span {
 @media (min-width: 824px) {
   .s-hero::before {
     top: 53%;
-    height: 37%;
+    height: 47%;
   }
 }
 .s-hero .s-inner {
@@ -900,6 +900,7 @@ span {
   }
 }
 .s-hero .arrow-down a {
+  display: inline-block;
   width: 50px;
   height: 50px;
 }
