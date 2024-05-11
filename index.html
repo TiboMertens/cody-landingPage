@@ -6,6 +6,7 @@
     <title>Cody</title>
     <link href="css/custom.css" rel="stylesheet" />
     <script src="js/nav.js" defer></script>
+    <script src="js/toggle-section.js" defer></script>
   </head>
   <body>
     <header>
@@ -82,7 +83,7 @@
             <h2>Voor wie is cody?</h2>
           </div>
           <div class="cards-container">
-            <div class="card owner">
+            <div class="card-for-who owner">
               <div class="image-container">
                 <img
                   src="./public/assets/images/huiseigenaar.svg"
@@ -101,7 +102,7 @@
                 </p>
               </div>
             </div>
-            <div class="card company">
+            <div class="card-for-who company">
               <div class="image-container">
                 <img
                   src="./public/assets/images/renovatiebedrijf.svg"
@@ -124,6 +125,311 @@
           </div>
         </div>
       </section>
+      <section class="s-how-it-works">
+        <div class="s-inner">
+          <div class="introduction">
+            <h2>Hoe werkt Cody?</h2>
+            <div class="switch">
+              <div class="switch-item owner active">
+                <p onclick="toggleSwitch('owner')">Huiseigenaar</p>
+              </div>
+              <div class="switch-item company">
+                <p onclick="toggleSwitch('company')">Renovatiebedrijf</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="how-it-works-owner active">
+        <section class="s-image-text">
+          <div class="s-inner">
+            <div class="image-container">
+              <img src="./public/assets/images/boost.svg" alt="Mockup" />
+            </div>
+            <div class="content-container">
+              <h3>Boost je bedrijf</h3>
+              <p>
+                Op ons platform vinden huiseigenaren niet alleen gedetailleerde
+                uitleg en kostenschattingen voor renovatieprojecten, maar ook
+                directe toegang tot renovatiebedrijven. Met slechts een paar
+                klikken kunnen potentiële klanten contact met jouw bedrijf
+                opnemen, waardoor je directe en efficiënte klantwerving mogelijk
+                maakt. Boost jouw bedrijf vandaag nog met ons platform!
+              </p>
+              <div class="btn">
+                <a href="#">Vraag samenwerking aan</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-rates">
+          <div class="s-inner">
+            <div class="introduction">
+              <h2>Onze tarieven</h2>
+            </div>
+            <div class="rates-container">
+              <div class="card-rate">
+                <a href="#">
+                  <div class="header">
+                    <p>Basis samenwerking</p>
+                  </div>
+                  <div class="main">
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">
+                        Basisvermelding met essentiële bedrijfsinformatie
+                      </p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/not-check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p>Foto van je logo</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/not-check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p>Extra informatie over je bedrijf</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/not-check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p>Call-to-action naar je website</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/not-check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p>Top positie in de renovatorenlijst</p>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <p>Slechts €1.00 cost per click</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card-rate active">
+                <div class="popular">
+                  <div>
+                    <p>Populair</p>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="header">
+                    <p>Gevorderde samenwerking</p>
+                  </div>
+                  <div class="main">
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">
+                        Basisvermelding met essentiële bedrijfsinformatie
+                      </p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Foto van je logo</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Extra informatie over je bedrijf</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Call-to-action naar je website</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/not-check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p>Top positie in de renovatorenlijst</p>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <p>Slechts €1.50 cost per click</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card-rate">
+                <a href="#">
+                  <div class="header">
+                    <p>Top positie</p>
+                  </div>
+                  <div class="main">
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">
+                        Basisvermelding met essentiële bedrijfsinformatie
+                      </p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Foto van je logo</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Extra informatie over je bedrijf</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Call-to-action naar je website</p>
+                    </div>
+                    <div>
+                      <div>
+                        <img
+                          src="./public/assets/images/check.svg"
+                          alt="check/error"
+                        />
+                      </div>
+                      <p class="active">Top positie in de renovatorenlijst</p>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <p>Vanaf €2.00 cost per click</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-image-text">
+          <div class="s-inner right">
+            <div class="image-container">
+              <img src="./public/assets/images/questions.svg" alt="Mockup" />
+            </div>
+            <div class="content-container">
+              <h3>Vragen en meer informatie</h3>
+              <p>
+                Als je geïnteresseerd bent om met ons samen te werken of als je
+                meer informatie wilt ontvangen, aarzel dan niet om contact met
+                ons op te nemen. We staan klaar om al jullie vragen te
+                beantwoorden en jullie verder te helpen!
+              </p>
+              <p class="mail">
+                Mail gerust naar:
+                <a href="mailto:vragen@cody.be">vragen@cody.be</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="how-it-works-company">
+        <section class="s-image-text">
+          <div class="s-inner">
+            <div class="image-container">
+              <img src="./public/assets/images/doel.svg" alt="Mockup" />
+            </div>
+            <div class="content-container">
+              <h3>Zet je eigen doel</h3>
+              <p>
+                Om je energieprestatiescore te verbeteren, is het essentieel om
+                duidelijke doelen te stellen. <br />
+                <br />
+                Deze doelen dienen als constante motivatie en sturing, waardoor
+                je voortdurend gemotiveerd blijft om verbeteringen aan je huis
+                aan te brengen.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="s-image-text blue">
+          <div class="s-inner right">
+            <div class="image-container">
+              <img src="./public/assets/images/verbeteren.svg" alt="Mockup" />
+            </div>
+            <div class="content-container">
+              <h3>Zie hoe je kan verbeteren</h3>
+              <p>
+                Ontdek hoe je je energieprestatiescore kunt optimaliseren met
+                onze uitgebreide lijst van renovatiemogelijkheden. Voor elke
+                renovatie bieden we niet alleen gedetailleerde informatie over
+                hoe het je score kan verbeteren.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="s-image-text">
+          <div class="s-inner">
+            <div class="image-container">
+              <img src="./public/assets/images/up-to-date.svg" alt="Mockup" />
+            </div>
+            <div class="content-container">
+              <h3>Blijf up-to-date</h3>
+              <p>
+                Hou moeiteloos bij welke renovaties je hebt voltooid, inclusief
+                de bijbehorende kosten en het jaarlijkse aantal renovaties.
+                <br />
+                <br />
+
+                Deze gestructureerde benadering geeft je een duidelijk overzicht
+                van al je inspanningen, waardoor je alle informatie op één
+                centrale plek kunt terugvinden.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer-inner">

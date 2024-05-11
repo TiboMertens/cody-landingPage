@@ -1,0 +1,103 @@
+.card-rate {
+  border-radius: 5px;
+  border: 2px solid $blue-light;
+
+  &.active {
+    border: 2px solid $blue-medium;
+
+    a {
+      .header {
+        background-color: $blue-medium;
+      }
+
+      .footer {
+        background-color: $blue-medium;
+      }
+    }
+  }
+
+  &:last-child {
+    grid-column: span 1;
+
+    @media (min-width: $tablet) {
+      grid-column: span 2;
+    }
+
+    @media (min-width: $desktop) {
+      grid-column: span 1;
+    }
+  }
+
+  .popular {
+    position: relative;
+    width: 100%;
+
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      background-color: $green;
+
+      p {
+        color: $white;
+        margin: 0;
+        padding: 16px 32px;
+        font-family: "Bold";
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  a {
+    .header {
+      background-color: $blue-light;
+      text-align: center;
+
+      p {
+        margin: 0;
+        padding: 32px 0;
+        font-family: "Bold";
+        color: $white;
+      }
+    }
+
+    .main {
+      background-color: $off-white-light;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+
+      div {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        div {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .footer {
+      background-color: $blue-light;
+      text-align: center;
+
+      p {
+        margin: 0;
+        padding: 16px 0;
+        font-family: "Bold";
+        color: $white;
+      }
+    }
+  }
+}
