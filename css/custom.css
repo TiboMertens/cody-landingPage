@@ -411,6 +411,11 @@ html {
 h1 {
   font-size: 1.7142857143em;
 }
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
 @media (min-width: 768px) {
   h1 {
     font-size: 2.1em;
@@ -443,12 +448,18 @@ a {
 }
 
 a {
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: none;
   color: #000000;
 }
+@media (min-width: 768px) {
+  a {
+    font-size: 1em;
+  }
+}
 
-p {
+p,
+span {
   font-size: 1em;
   font-family: "ExtraLight";
 }
@@ -541,6 +552,140 @@ p {
 /* Optional: Hover effect for scrollbar thumb */
 *::-webkit-scrollbar-thumb:hover {
   background-color: #aaa;
+}
+
+.s-hero {
+  position: relative;
+  min-height: 90vh;
+}
+.s-hero::before {
+  content: "";
+  position: absolute;
+  top: 84%;
+  left: 0;
+  width: 100%;
+  height: 16%;
+  background-color: #f1f4f9;
+  z-index: -1;
+}
+@media (min-width: 640px) {
+  .s-hero::before {
+    top: 75%;
+    height: 25%;
+  }
+}
+@media (min-width: 824px) {
+  .s-hero::before {
+    top: 60%;
+    height: 40%;
+  }
+}
+.s-hero .s-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 824px) {
+  .s-hero .s-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  .s-hero .s-inner {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+.s-hero .s-inner .content-container .content {
+  margin-bottom: 32px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .s-hero .s-inner .content-container .content p {
+    width: 80%;
+  }
+}
+@media (min-width: 824px) {
+  .s-hero .s-inner .content-container .content p {
+    width: 100%;
+  }
+}
+.s-hero .s-inner .content-container .btn-container {
+  max-width: 400px;
+}
+@media (min-width: 824px) {
+  .s-hero .s-inner .content-container .btn-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.s-hero .s-inner .content-container .btn-container a {
+  width: 98%;
+  background-color: #0072FF;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FDFDFD;
+  border-radius: 5px;
+  border: 3px solid #0072FF;
+  position: relative;
+  bottom: 2px;
+}
+@media (min-width: 1024px) {
+  .s-hero .s-inner .content-container .btn-container a {
+    height: 48px;
+  }
+}
+.s-hero .s-inner .content-container .btn-container a:last-child {
+  background-color: #FDFDFD;
+  color: #0072FF;
+}
+.s-hero .s-inner .content-container .btn-container .or-container {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  width: 98%;
+}
+.s-hero .s-inner .content-container .btn-container .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  margin: 0 2px;
+}
+.s-hero .s-inner .content-container .btn-container .line:first-child {
+  margin-right: 12px;
+}
+.s-hero .s-inner .content-container .btn-container .line:last-child {
+  margin-left: 12px;
+}
+.s-hero .s-inner .content-container .btn-container .separator {
+  margin: 0 2px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.s-hero .s-inner .image-container {
+  display: flex;
+}
+.s-hero .s-inner .image-container img {
+  width: 100%;
+  height: auto;
+}
+.s-hero .arrow-down {
+  text-align: right;
+  margin-right: 24px;
+}
+@media (min-width: 768px) {
+  .s-hero .arrow-down {
+    margin-right: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .s-hero .arrow-down {
+    margin-right: 120px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

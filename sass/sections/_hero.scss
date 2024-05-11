@@ -1,0 +1,141 @@
+.s-hero {
+  position: relative;
+  min-height: 90vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 84%;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    background-color: #f1f4f9;
+    z-index: -1;
+
+    @media (min-width: $phone) {
+      top: 75%;
+      height: 25%;
+    }
+
+    @media (min-width: $tablet-md) {
+      top: 60%;
+      height: 40%;
+    }
+  }
+
+  .s-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $tablet-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-sm) {
+      grid-template-columns: 2fr 3fr;
+    }
+
+    .content-container {
+      .content {
+        margin-bottom: 32px;
+        width: 100%;
+
+        p {
+          @media (min-width: $phone) {
+            width: 80%;
+          }
+
+          @media (min-width: $tablet-md) {
+            width: 100%;
+          }
+        }
+      }
+
+      .btn-container {
+        max-width: 400px;
+
+        @media (min-width: $tablet-md) {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        a {
+          width: 98%;
+          background-color: $blue-dark;
+          height: 42px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $off-white-light;
+          border-radius: 5px;
+          border: 3px solid $blue-dark;
+          position: relative;
+          bottom: 2px;
+
+          @media (min-width: $desktop) {
+            height: 48px;
+          }
+
+          &:last-child {
+            background-color: $off-white-light;
+            color: $blue-dark;
+          }
+        }
+
+        .or-container {
+          display: flex;
+          align-items: center;
+          margin: 24px 0;
+          width: 98%;
+        }
+
+        .line {
+          flex-grow: 1;
+          height: 1px;
+          background-color: black;
+          margin: 0 2px;
+
+          &:first-child {
+            margin-right: 12px;
+          }
+
+          &:last-child {
+            margin-left: 12px;
+          }
+        }
+
+        .separator {
+          margin: 0 2px;
+          font-size: 0.875rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .image-container {
+      display: flex;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .arrow-down {
+    text-align: right;
+    margin-right: 24px;
+
+    @media (min-width: $tablet) {
+      margin-right: 48px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 120px;
+    }
+  }
+}

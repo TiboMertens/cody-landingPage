@@ -10,6 +10,10 @@ html {
 h1 {
   font-size: 1.7142857142857142em;
 
+  @media (min-width: $phone) {
+    font-size: 2.5em;
+  }
+
   @media (min-width: $tablet) {
     font-size: 2.1em;
   }
@@ -39,12 +43,17 @@ a {
 }
 
 a {
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 1em;
+  }
 }
 
-p {
+p,
+span {
   font-size: 1em;
   font-family: "ExtraLight";
 }
