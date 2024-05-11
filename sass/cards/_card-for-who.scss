@@ -1,0 +1,42 @@
+.card-for-who {
+  background-color: $off-white-light;
+  padding: 42px;
+  border-radius: 5px;
+
+  .image-container {
+    border-radius: 9999px;
+    text-align: center;
+    width: 100%;
+
+    img {
+      width: 75%;
+      max-width: 200px;
+
+      @media (min-width: $phone-md) {
+        width: 35%;
+      }
+
+      @media (min-width: $tablet) {
+        width: 75%;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 24px;
+    text-align: center;
+
+    p {
+      text-align: left;
+      margin-bottom: 0;
+
+      @media (min-width: $phone) {
+        margin-bottom: 1.2em !important;
+      }
+
+      @media (min-width: $tablet) {
+        margin-bottom: 0.8em !important;
+      }
+    }
+  }
+}
