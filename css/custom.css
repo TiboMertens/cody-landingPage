@@ -434,20 +434,28 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2857142857em;
+  font-size: 1.6em;
+  margin: 0;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 2.4em;
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    margin-bottom: 60px;
   }
 }
 
 h3 {
-  font-size: 1.4285714286em;
+  font-size: 1.2em;
+  margin: 0;
 }
 @media (min-width: 768px) {
   h3 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
@@ -688,6 +696,8 @@ span {
 .s-hero .arrow-down {
   text-align: right;
   margin-right: 24px;
+  position: relative;
+  bottom: 54px;
 }
 @media (min-width: 768px) {
   .s-hero .arrow-down {
@@ -702,6 +712,65 @@ span {
 .s-hero .arrow-down img {
   width: 50px;
   height: 50px;
+}
+
+.s-for-who {
+  background-color: #E9F0FD;
+}
+.s-for-who .s-inner .introduction {
+  text-align: center;
+}
+.s-for-who .s-inner .cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 46px;
+}
+@media (min-width: 768px) {
+  .s-for-who .s-inner .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.s-for-who .s-inner .cards-container .card {
+  background-color: #FDFDFD;
+  padding: 42px;
+  border-radius: 5px;
+}
+.s-for-who .s-inner .cards-container .card .image-container {
+  border-radius: 9999px;
+  text-align: center;
+  width: 100%;
+}
+.s-for-who .s-inner .cards-container .card .image-container img {
+  width: 75%;
+  max-width: 200px;
+}
+@media (min-width: 474px) {
+  .s-for-who .s-inner .cards-container .card .image-container img {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .s-for-who .s-inner .cards-container .card .image-container img {
+    width: 75%;
+  }
+}
+.s-for-who .s-inner .cards-container .card .content {
+  margin-top: 24px;
+  text-align: center;
+}
+.s-for-who .s-inner .cards-container .card .content p {
+  text-align: left;
+  margin-bottom: 0;
+}
+@media (min-width: 640px) {
+  .s-for-who .s-inner .cards-container .card .content p {
+    margin-bottom: 1.2em !important;
+  }
+}
+@media (min-width: 768px) {
+  .s-for-who .s-inner .cards-container .card .content p {
+    margin-bottom: 0.8em !important;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
