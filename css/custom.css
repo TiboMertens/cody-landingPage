@@ -385,6 +385,19 @@ header .header-inner nav .nav-mobile-dropdown.active {
   height: auto;
 }
 
+footer {
+  background-color: #FDFDFD;
+}
+footer .footer-inner div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+footer .footer-inner div a {
+  font-size: 0.8em;
+  font-family: "ExtraLight";
+}
+
 html {
   font-size: 14px;
   background-color: #FDFDFD;
@@ -468,6 +481,22 @@ p {
 }
 @media (min-width: 1024px) {
   .header-inner {
+    padding: 40px 120px;
+  }
+}
+
+.footer-inner {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+@media (min-width: 768px) {
+  .footer-inner {
+    padding: 40px 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-inner {
     padding: 40px 120px;
   }
 }

@@ -77,6 +77,20 @@ p {
   }
 }
 
+.footer-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  @media (min-width: $tablet) {
+    padding: 40px 48px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 40px 120px;
+  }
+}
+
 /* Hide horizontal scrollbar for WebKit-based browsers */
 ::-webkit-scrollbar {
   height: 5px;

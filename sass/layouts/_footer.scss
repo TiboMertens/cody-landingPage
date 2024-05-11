@@ -1,0 +1,16 @@
+footer {
+    background-color: $off-white-light;
+
+    .footer-inner {
+        div {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            a {
+                font-size: 0.8em;
+                font-family: 'ExtraLight';
+            }
+        }
+    }
+}
