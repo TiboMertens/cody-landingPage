@@ -1,5 +1,10 @@
 header {
   background-color: $off-white-light;
+  position: fixed;
+  width: 100%; 
+  margin-top: -90px;
+  z-index: 999;
+
   .header-inner {
     nav {
       .nav-desktop {
@@ -32,6 +37,15 @@ header {
             justify-content: center;
             align-items: center;
             padding: 12px 48px;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: $blue-dark;
+
+              a {
+                color: $off-white-light;
+              }
+            }
 
             @media (min-width: $tablet-md) {
               display: flex;

@@ -324,6 +324,10 @@ template {
 
 header {
   background-color: #FDFDFD;
+  position: fixed;
+  width: 100%;
+  margin-top: -90px;
+  z-index: 999;
 }
 header .header-inner nav .nav-desktop {
   display: flex;
@@ -354,6 +358,13 @@ header .header-inner nav .nav-desktop .nav-items-container .nav-button {
   justify-content: center;
   align-items: center;
   padding: 12px 48px;
+  transition: all 0.3s ease;
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-button:hover {
+  background-color: #0072FF;
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-button:hover a {
+  color: #FDFDFD;
 }
 @media (min-width: 824px) {
   header .header-inner nav .nav-desktop .nav-items-container .nav-button {
@@ -483,16 +494,16 @@ span {
 .header-inner {
   max-width: 1420px;
   margin: 0 auto;
-  padding: 40px 24px;
+  padding: 20px 24px;
 }
 @media (min-width: 768px) {
   .header-inner {
-    padding: 40px 48px;
+    padding: 20px 48px;
   }
 }
 @media (min-width: 1024px) {
   .header-inner {
-    padding: 40px 120px;
+    padding: 20px 120px;
   }
 }
 
@@ -557,6 +568,7 @@ span {
 .s-hero {
   position: relative;
   min-height: 90vh;
+  margin-top: 90px;
 }
 .s-hero::before {
   content: "";
@@ -686,6 +698,10 @@ span {
   .s-hero .arrow-down {
     margin-right: 120px;
   }
+}
+.s-hero .arrow-down img {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=custom.css.map */
