@@ -991,9 +991,13 @@ span {
   display: flex;
   gap: 6%;
   flex-direction: column-reverse;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media (min-width: 824px) {
   .s-image-text .s-inner {
+    padding-top: auto;
+    padding-bottom: auto;
     flex-direction: row;
   }
   .s-image-text .s-inner.right {
