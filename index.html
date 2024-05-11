@@ -7,6 +7,7 @@
     <link href="css/custom.css" rel="stylesheet" />
     <script src="js/nav.js" defer></script>
     <script src="js/toggle-section.js" defer></script>
+    <script src="js/smooth-scroll.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,11 +21,13 @@
             </div>
             <div class="nav-items-container">
               <div class="nav-items">
-                <a href="#">Voor wie is Cody?</a>
-                <a href="#">Hoe werkt Cody?</a>
+                <a class="smooth-scroll" href="#for-who">Voor wie is Cody?</a>
+                <a class="smooth-scroll" href="#how-it-works"
+                  >Hoe werkt Cody?</a
+                >
               </div>
               <div class="nav-button">
-                <a href="#">Meld je aan</a>
+                <a href="https://www.docs.codyepc.com/login">Meld je aan</a>
               </div>
               <div class="nav-hamburger">
                 <img
@@ -35,10 +38,14 @@
             </div>
           </div>
           <div class="nav-mobile-dropdown">
-            <div><a href="#">Voor wie is Cody?</a></div>
-            <div><a href="#">Hoe werkt Cody?</a></div>
+            <div>
+              <a class="smooth-scroll" href="#for-who">Voor wie is Cody?</a>
+            </div>
+            <div>
+              <a class="smooth-scroll" href="#how-it-works">Hoe werkt Cody?</a>
+            </div>
             <div class="nav-button">
-              <a href="#">Meld je aan</a>
+              <a href="https://www.docs.codyepc.com/login">Meld je aan</a>
             </div>
           </div>
         </nav>
@@ -57,13 +64,13 @@
               </p>
             </div>
             <div class="btn-container">
-              <a href="#">Registreer nu</a>
+              <a href="https://www.docs.codyepc.com/login">Registreer nu</a>
               <div class="or-container">
                 <div class="line"></div>
                 <span class="separator">OF</span>
                 <div class="line"></div>
               </div>
-              <a href="#">Meld je aan</a>
+              <a href="https://www.docs.codyepc.com/login">Meld je aan</a>
             </div>
           </div>
           <div class="image-container">
@@ -71,7 +78,7 @@
           </div>
         </div>
         <div class="arrow-down">
-          <a href="#">
+          <a class="smooth-scroll" href="#for-who">
             <img
               src="./public/assets/images/arrow-down.svg"
               alt="Arrow to go to the next part of the page"
@@ -79,7 +86,7 @@
           </a>
         </div>
       </section>
-      <section class="s-for-who">
+      <section class="s-for-who" id="for-who">
         <div class="s-inner">
           <div class="introduction">
             <h2>Voor wie is cody?</h2>
@@ -127,7 +134,7 @@
           </div>
         </div>
       </section>
-      <section class="s-how-it-works">
+      <section class="s-how-it-works" id="how-it-works">
         <div class="s-inner">
           <div class="introduction">
             <h2>Hoe werkt Cody?</h2>
