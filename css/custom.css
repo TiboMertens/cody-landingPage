@@ -322,8 +322,72 @@ template {
   display: none;
 }
 
+header {
+  background-color: #FDFDFD;
+}
+header .header-inner nav .nav-desktop {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-inner nav .nav-desktop .logo {
+  display: flex;
+  align-items: center;
+}
+header .header-inner nav .nav-desktop .nav-items-container {
+  display: flex;
+  gap: 40px;
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-items {
+  display: none;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 824px) {
+  header .header-inner nav .nav-desktop .nav-items-container .nav-items {
+    display: flex;
+  }
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-button {
+  border: 2px solid #0072FF;
+  border-radius: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 48px;
+}
+@media (min-width: 824px) {
+  header .header-inner nav .nav-desktop .nav-items-container .nav-button {
+    display: flex;
+  }
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 824px) {
+  header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger {
+    display: none;
+  }
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger img {
+  transition: transform 0.3s ease;
+}
+header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger.active img {
+  transform: rotate(90deg);
+}
+header .header-inner nav .nav-mobile-dropdown {
+  display: none;
+  transition: height 0.3s ease;
+}
+header .header-inner nav .nav-mobile-dropdown.active {
+  display: block;
+  height: auto;
+}
+
 html {
   font-size: 14px;
+  background-color: #FDFDFD;
 }
 @media (min-width: 768px) {
   html {
@@ -367,6 +431,8 @@ a {
 
 a {
   font-size: 1em;
+  text-decoration: none;
+  color: #000000;
 }
 
 p {
@@ -387,6 +453,22 @@ p {
 @media (min-width: 1024px) {
   .s-inner {
     padding: 60px 120px;
+  }
+}
+
+.header-inner {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+@media (min-width: 768px) {
+  .header-inner {
+    padding: 40px 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-inner {
+    padding: 40px 120px;
   }
 }
 
