@@ -329,29 +329,29 @@ header {
   margin-top: -90px;
   z-index: 999;
 }
-header .header-inner nav .nav-desktop {
+header nav .nav-desktop {
   display: flex;
   justify-content: space-between;
 }
-header .header-inner nav .nav-desktop .logo {
+header nav .nav-desktop .logo {
   display: flex;
   align-items: center;
 }
-header .header-inner nav .nav-desktop .nav-items-container {
+header nav .nav-desktop .nav-items-container {
   display: flex;
   gap: 40px;
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-items {
+header nav .nav-desktop .nav-items-container .nav-items {
   display: none;
   gap: 40px;
   align-items: center;
 }
 @media (min-width: 824px) {
-  header .header-inner nav .nav-desktop .nav-items-container .nav-items {
+  header nav .nav-desktop .nav-items-container .nav-items {
     display: flex;
   }
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-button {
+header nav .nav-desktop .nav-items-container .nav-button {
   border: 2px solid #0072FF;
   border-radius: 5px;
   display: none;
@@ -360,40 +360,102 @@ header .header-inner nav .nav-desktop .nav-items-container .nav-button {
   padding: 12px 48px;
   transition: all 0.3s ease;
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-button:hover {
+header nav .nav-desktop .nav-items-container .nav-button a {
+  color: #0072FF;
+}
+header nav .nav-desktop .nav-items-container .nav-button:hover {
   background-color: #0072FF;
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-button:hover a {
+header nav .nav-desktop .nav-items-container .nav-button:hover a {
   color: #FDFDFD;
 }
 @media (min-width: 824px) {
-  header .header-inner nav .nav-desktop .nav-items-container .nav-button {
+  header nav .nav-desktop .nav-items-container .nav-button {
     display: flex;
   }
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger {
+header nav .nav-desktop .nav-items-container .nav-hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 824px) {
-  header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger {
+  header nav .nav-desktop .nav-items-container .nav-hamburger {
     display: none;
   }
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger img {
+header nav .nav-desktop .nav-items-container .nav-hamburger img {
   transition: transform 0.3s ease;
 }
-header .header-inner nav .nav-desktop .nav-items-container .nav-hamburger.active img {
+header nav .nav-desktop .nav-items-container .nav-hamburger.active img {
   transform: rotate(90deg);
 }
-header .header-inner nav .nav-mobile-dropdown {
+header nav .nav-mobile-dropdown {
   display: none;
   transition: height 0.3s ease;
 }
-header .header-inner nav .nav-mobile-dropdown.active {
+header nav .nav-mobile-dropdown.active {
   display: block;
   height: auto;
+}
+header nav .nav-mobile-dropdown div {
+  padding: 16px 0;
+}
+header nav .nav-mobile-dropdown div:first-child {
+  margin-top: 12px;
+}
+header nav .nav-mobile-dropdown div:nth-child(2) {
+  margin-bottom: 12px;
+}
+header nav .nav-mobile-dropdown div:hover {
+  background-color: #9EBDFF;
+}
+header nav .nav-mobile-dropdown div:last-child:hover {
+  background-color: #FDFDFD;
+}
+header nav .nav-mobile-dropdown div a {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media (min-width: 768px) {
+  header nav .nav-mobile-dropdown div a {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  header nav .nav-mobile-dropdown div a {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+header nav .nav-mobile-dropdown .nav-button {
+  border: 2px solid #0072FF;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 48px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  header nav .nav-mobile-dropdown .nav-button {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  header nav .nav-mobile-dropdown .nav-button {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+header nav .nav-mobile-dropdown .nav-button a {
+  color: #0072FF;
 }
 
 footer {
@@ -499,18 +561,18 @@ span {
   }
 }
 
-.header-inner {
+.nav-desktop {
   max-width: 1420px;
   margin: 0 auto;
   padding: 20px 24px;
 }
 @media (min-width: 768px) {
-  .header-inner {
+  .nav-desktop {
     padding: 20px 48px;
   }
 }
 @media (min-width: 1024px) {
-  .header-inner {
+  .nav-desktop {
     padding: 20px 80px;
   }
 }
