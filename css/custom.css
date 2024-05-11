@@ -1011,4 +1011,31 @@ span {
   }
 }
 
+.s-sponsors {
+  background-color: #E9F0FD;
+}
+.s-sponsors .s-inner .introduction h2 {
+  text-align: center;
+}
+.s-sponsors .s-inner .sponsors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 86px;
+}
+@media (min-width: 1024px) {
+  .s-sponsors .s-inner .sponsors-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 124px;
+  }
+}
+.s-sponsors .s-inner .sponsors-container .sponsor {
+  max-height: 150px;
+}
+.s-sponsors .s-inner .sponsors-container .sponsor img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
 /*# sourceMappingURL=custom.css.map */
