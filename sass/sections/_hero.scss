@@ -43,11 +43,14 @@
       .content {
         margin-bottom: 32px;
         width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+        @media (min-width: $phone-md) {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
         @media (min-width: $desktop) {
           text-align: left;

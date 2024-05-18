@@ -826,11 +826,15 @@ span {
 .s-hero .s-inner .content-container .content {
   margin-bottom: 32px;
   width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+@media (min-width: 474px) {
+  .s-hero .s-inner .content-container .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 1024px) {
   .s-hero .s-inner .content-container .content {
