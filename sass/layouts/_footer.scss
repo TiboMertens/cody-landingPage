@@ -1,16 +1,33 @@
 footer {
-    background-color: $off-white-light;
+  background-color: $off-white-light;
 
-    .footer-inner {
-        div {
-            display: flex;
-            align-items: center;
-            gap: 40px;
+  .footer-inner {
+    padding: 20px 20px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
 
-            a {
-                font-size: 0.8em;
-                font-family: 'ExtraLight';
-            }
-        }
+    @media (min-width: $phone-md) {
+      justify-content: space-between;
+      flex-direction: row;
     }
+
+    .copyright {
+      p {
+        font-size: 0.8em;
+        font-family: "ExtraLight";
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      a {
+        font-size: 0.8em;
+        font-family: "ExtraLight";
+      }
+    }
+  }
 }

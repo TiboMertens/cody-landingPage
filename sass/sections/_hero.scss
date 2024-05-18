@@ -18,7 +18,7 @@
       height: 25%;
     }
 
-    @media (min-width: $tablet-md) {
+    @media (min-width: $desktop) {
       top: 53%;
       height: 47%;
     }
@@ -31,7 +31,7 @@
     position: relative;
     z-index: 1;
 
-    @media (min-width: $tablet-md) {
+    @media (min-width: $desktop) {
       grid-template-columns: 1fr 1fr;
     }
 
@@ -43,24 +43,47 @@
       .content {
         margin-bottom: 32px;
         width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: $desktop) {
+          text-align: left;
+          display: block;
+        }
+
+        h1 {
+          margin-bottom: 0;
+
+          @media (min-width: $desktop) {
+            margin-bottom: 12px;
+          }
+        }
 
         p {
           @media (min-width: $phone) {
             width: 80%;
           }
 
-          @media (min-width: $tablet-md) {
+          @media (min-width: $desktop) {
             width: 100%;
           }
         }
       }
 
       .btn-container {
-        max-width: 400px;
+        // max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-        @media (min-width: $tablet-md) {
+        @media (min-width: $desktop) {
           width: 100%;
           max-width: 100%;
+          display: block;
         }
 
         a {
@@ -76,6 +99,7 @@
           border: 3px solid $blue-dark;
           position: relative;
           bottom: 2px;
+          max-width: 400px;
 
           @media (min-width: $desktop) {
             height: 48px;
@@ -92,6 +116,10 @@
           align-items: center;
           margin: 24px 0;
           width: 98%;
+
+          @media (min-width: $phone-md) {
+            width: 400px;
+          }
         }
 
         .line {
