@@ -1,33 +1,33 @@
 .s-sponsors {
-    background-color: $blue-lighter;
+  background-color: $blue-lighter;
 
-    .s-inner {
-        .introduction {
-            h2 {
-                text-align: center;
-            }
-        }
-
-        .sponsors-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            gap: 86px;
-
-            @media (min-width: $desktop) {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                gap: 124px;
-            }
-
-            .sponsor {
-                max-height: 150px;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    max-height: 150px;
-                }
-            }
-        }
+  .s-inner {
+    .introduction {
+      h2 {
+        text-align: center;
+      }
     }
+
+    .sponsors-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 86px;
+
+      @media (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 124px;
+      }
+
+      .sponsor {
+        max-height: 150px;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 150px;
+        }
+      }
+    }
+  }
 }

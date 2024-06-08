@@ -105,11 +105,11 @@
           max-width: 400px;
 
           &:hover {
-            background-color: #3390FF;
+            background-color: #3390ff;
           }
 
           &:active {
-            background-color: #0056CC;
+            background-color: #0056cc;
           }
 
           @media (min-width: $desktop) {
@@ -121,11 +121,11 @@
             color: $blue-dark;
 
             &:hover {
-              background-color: #E0E0E0;
+              background-color: #e0e0e0;
             }
 
             &:active {
-              background-color: #CCCCCC;
+              background-color: #cccccc;
             }
           }
         }
