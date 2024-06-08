@@ -104,6 +104,14 @@
           bottom: 2px;
           max-width: 400px;
 
+          &:hover {
+            background-color: #3390FF;
+          }
+
+          &:active {
+            background-color: #0056CC;
+          }
+
           @media (min-width: $desktop) {
             height: 48px;
           }
@@ -111,6 +119,14 @@
           &:last-child {
             background-color: $off-white-light;
             color: $blue-dark;
+
+            &:hover {
+              background-color: #E0E0E0;
+            }
+
+            &:active {
+              background-color: #CCCCCC;
+            }
           }
         }
 

@@ -756,6 +756,9 @@ span {
   flex-direction: column;
   gap: 42px;
 }
+.card-rate a .main:hover {
+  background-color: #EDF0F5;
+}
 .card-rate a .main div {
   display: flex;
   gap: 24px;
@@ -888,6 +891,12 @@ span {
   bottom: 2px;
   max-width: 400px;
 }
+.s-hero .s-inner .content-container .btn-container a:hover {
+  background-color: #3390FF;
+}
+.s-hero .s-inner .content-container .btn-container a:active {
+  background-color: #0056CC;
+}
 @media (min-width: 1024px) {
   .s-hero .s-inner .content-container .btn-container a {
     height: 48px;
@@ -896,6 +905,12 @@ span {
 .s-hero .s-inner .content-container .btn-container a:last-child {
   background-color: #FDFDFD;
   color: #0072FF;
+}
+.s-hero .s-inner .content-container .btn-container a:last-child:hover {
+  background-color: #E0E0E0;
+}
+.s-hero .s-inner .content-container .btn-container a:last-child:active {
+  background-color: #CCCCCC;
 }
 .s-hero .s-inner .content-container .btn-container .or-container {
   display: flex;
@@ -1070,7 +1085,7 @@ span {
 }
 .s-image-text .s-inner .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .s-image-text .s-inner .content-container {
   width: 100%;
@@ -1086,7 +1101,7 @@ span {
   }
 }
 .s-image-text .s-inner .content-container p {
-  font-size: 0.8em;
+  font-size: 0.95em;
 }
 @media (min-width: 1024px) {
   .s-image-text .s-inner .content-container p {
