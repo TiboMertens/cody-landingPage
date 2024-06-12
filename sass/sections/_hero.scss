@@ -162,6 +162,18 @@
           font-weight: bold;
         }
       }
+
+      .app-store-container {
+        display: none;
+        
+        div {
+          img {
+            width: 136px;
+            height: auto;
+            min-height: 40px;
+          }
+        }
+      }
     }
 
     .image-container {
