@@ -60,10 +60,19 @@
       crossorigin="anonymous"
     />
     <link href="css/custom.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      defer
+    ></script>
     <script src="js/nav.js" defer></script>
     <script src="js/toggle-section.js" defer></script>
     <script src="js/smooth-scroll.js" defer></script>
     <script src="js/check-iphone.js" defer></script>
+    <script src="js/scroll-animations.js" defer></script>
   </head>
   <body id="top">
     <header>
@@ -159,7 +168,7 @@
             <h2>Voor wie is cody?</h2>
           </div>
           <div class="cards-container">
-            <div class="card-for-who owner">
+            <div class="card-for-who owner" data-aos="fade-up">
               <div class="image-container">
                 <img
                   src="./public/assets/images/huiseigenaar.svg"
@@ -178,7 +187,7 @@
                 </p>
               </div>
             </div>
-            <div class="card-for-who company">
+            <div class="card-for-who company" data-aos="fade-up">
               <div class="image-container">
                 <img
                   src="./public/assets/images/renovatiebedrijf.svg"
@@ -226,10 +235,10 @@
       <div class="how-it-works-owner active">
         <section class="s-image-text">
           <div class="s-inner">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-right">
               <img src="./public/assets/images/doel.webp" alt="Mockup" />
             </div>
-            <div class="content-container">
+            <div class="content-container" data-aos="fade-left">
               <h3>Zet je eigen doel</h3>
               <p>
                 Om je energieprestatiescore te verbeteren, is het essentieel om
@@ -244,10 +253,10 @@
         </section>
         <section class="s-image-text blue">
           <div class="s-inner right">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-left">
               <img src="./public/assets/images/verbeteren.webp" alt="Mockup" />
             </div>
-            <div class="content-container">
+            <div class="content-container" data-aos="fade-right">
               <h3>Zie hoe je kan verbeteren</h3>
               <p>
                 Ontdek hoe je je energieprestatiescore kunt optimaliseren met
@@ -260,10 +269,10 @@
         </section>
         <section class="s-image-text">
           <div class="s-inner">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-right">
               <img src="./public/assets/images/up-to-date.webp" alt="Mockup" />
             </div>
-            <div class="content-container">
+            <div class="content-container" data-aos="fade-left">
               <h3>Blijf up-to-date</h3>
               <p>
                 Hou moeiteloos bij welke renovaties je hebt voltooid, inclusief
@@ -282,10 +291,10 @@
       <div class="how-it-works-company">
         <section class="s-image-text">
           <div class="s-inner">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-right">
               <img src="./public/assets/images/boost.svg" alt="Mockup" />
             </div>
-            <div class="content-container">
+            <div class="content-container" data-aos="fade-left">
               <h3>Boost je bedrijf</h3>
               <p>
                 Op ons platform vinden huiseigenaren niet alleen gedetailleerde
@@ -313,7 +322,7 @@
               <h2>Onze tarieven</h2>
             </div>
             <div class="rates-container">
-              <div class="card-rate">
+              <div class="card-rate" data-aos="fade-right">
                 <a href="https://www.docs.codyepc.com/promotors/subscription">
                   <div class="header">
                     <p>Top positie</p>
@@ -372,7 +381,7 @@
                   </div>
                 </a>
               </div>
-              <div class="card-rate active">
+              <div class="card-rate active" data-aos="fade-up">
                 <div class="popular">
                   <div>
                     <p>Populair</p>
@@ -436,7 +445,7 @@
                   </div>
                 </a>
               </div>
-              <div class="card-rate">
+              <div class="card-rate" data-aos="fade-left">
                 <a href="https://www.docs.codyepc.com/promotors/subscription">
                   <div class="header">
                     <p>Basis samenwerking</p>
@@ -500,10 +509,10 @@
         </section>
         <section class="s-image-text">
           <div class="s-inner right">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-left">
               <img src="./public/assets/images/questions.svg" alt="Mockup" />
             </div>
-            <div class="content-container">
+            <div class="content-container" data-aos="fade-right">
               <h3>Vragen en meer informatie</h3>
               <p>
                 Als je geïnteresseerd bent om met ons samen te werken of als je
@@ -525,25 +534,25 @@
             <h2>Onze sponsors</h2>
           </div>
           <div class="sponsors-container">
-            <div class="sponsor">
+            <div class="sponsor" data-aos="fade-up">
               <img
                 src="./public/assets/images/sponsors/ipsum-1.svg"
                 alt="Logo"
               />
             </div>
-            <div class="sponsor">
+            <div class="sponsor" data-aos="fade-up">
               <img
                 src="./public/assets/images/sponsors/ipsum-2.svg"
                 alt="Logo"
               />
             </div>
-            <div class="sponsor">
+            <div class="sponsor" data-aos="fade-up">
               <img
                 src="./public/assets/images/sponsors/ipsum-3.svg"
                 alt="Logo"
               />
             </div>
-            <div class="sponsor">
+            <div class="sponsor" data-aos="fade-up">
               <img
                 src="./public/assets/images/sponsors/ipsum-4.svg"
                 alt="Logo"
